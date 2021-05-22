@@ -24,12 +24,12 @@
                 <h3>Contactate con nosotros</h3>
                 <form name="YC Solutions Web consultas" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                     <p>
-                        <label>Nombre</label>
-                        <input type="text" name="Nombre">
+                        <label>Nombre *</label>
+                        <input type="text" name="Nombre" required>
                     </p>
                     <p>
-                        <label>Email</label>
-                        <input type="email" name="email">
+                        <label>Email *</label>
+                        <input type="email" name="email" required>
                     </p>
                     <p>
                         <label>Celular</label>
@@ -44,13 +44,13 @@
                         </select>
                     </p>
                     <p class="block">
-                       <label>Mensaje</label> 
-                        <textarea name="Mensaje" rows="3"></textarea>
+                       <label>Mensaje *</label> 
+                        <textarea name="Mensaje" rows="3" required></textarea>
                     </p>
                     <div class="recaptcha" data-netlify-recaptcha="true">
                     </div>
                     <p class="block">
-                       <button type="submit">
+                       <button type="submit" id="boton">
                             Enviar
                         </button>
                     </p>
@@ -105,7 +105,7 @@ recaptcha {
     transform-origin: 0 0;
 }
 
-block {
+boton {
     transform: scale(0.84);
     transform-origin: 0 0;
 }
