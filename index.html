@@ -47,7 +47,8 @@
                        <label>Mensaje</label> 
                         <textarea name="Mensaje" rows="3"></textarea>
                     </p>
-                    <div class="recaptcha" data-netlify-recaptcha="true"></div>
+                    <div id="recaptcha" data-netlify-recaptcha="true">
+                    </div>
                     <p class="block">
                        <button type="submit">
                             Enviar
@@ -97,7 +98,9 @@ body {
 }
     
 recaptcha {
-    align: center
+    width: 400px;
+    margin: 0px auto;
+    padding: 5px;
 }
     
 ul {
