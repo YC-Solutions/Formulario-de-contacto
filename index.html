@@ -22,7 +22,7 @@
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
                 <h3>Contactate con nosotros</h3>
-                <form name="YC Solutions Web consultas" method="POST" data-netlify="true">
+                <form name="YC Solutions Web consultas" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                     <p>
                         <label>Nombre</label>
                         <input type="text" name="Nombre">
@@ -47,6 +47,8 @@
                        <label>Mensaje</label> 
                         <textarea name="Mensaje" rows="3"></textarea>
                     </p>
+                    <div data-netlify-recaptcha="true"></div>
+                    <p>
                     <p class="block">
                        <button type="submit">
                             Enviar
